@@ -2,11 +2,11 @@
 Package client is an internal package, implementing the raw interface to the
 Pact CLI tools: The Pact Mock Service and Provider Verification "binaries."
 
-See https://github.com/pact-foundation/pact-provider-verifier and
+See https://github.com/JEFFTheDev/pact-provider-verifier and
 https://github.com/bethesque/pact-mock_service for more on the Ruby "binaries".
 
 NOTE: The ultimate goal here is to replace the Ruby dependencies with a shared
-library (Pact Reference - (https://github.com/pact-foundation/pact-reference/).
+library (Pact Reference - (https://github.com/JEFFTheDev/pact-reference/).
 */
 package client
 

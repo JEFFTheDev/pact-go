@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
+	"github.com/JEFFTheDev/pact-go/types"
 	"github.com/hashicorp/logutils"
-	"github.com/pact-foundation/pact-go/types"
 )
 
 // PactFile is a simple representation of a Pact file to be able to

@@ -20,11 +20,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/JEFFTheDev/pact-go/install"
+	"github.com/JEFFTheDev/pact-go/proxy"
+	"github.com/JEFFTheDev/pact-go/types"
+	"github.com/JEFFTheDev/pact-go/utils"
 	"github.com/hashicorp/logutils"
-	"github.com/pact-foundation/pact-go/install"
-	"github.com/pact-foundation/pact-go/proxy"
-	"github.com/pact-foundation/pact-go/types"
-	"github.com/pact-foundation/pact-go/utils"
 )
 
 // Pact is the container structure to run the Consumer Pact test cases.
@@ -66,7 +66,7 @@ type Pact struct {
 	// "overwrite" will always truncate and replace the pact after each run
 	// "merge" will append to the pact file, which is useful if your tests
 	// are split over multiple files and instantiations of a Mock Server
-	// See https://github.com/pact-foundation/pact-ruby/blob/master/documentation/configuration.md#pactfile_write_mode
+	// See https://github.com/JEFFTheDev/pact-ruby/blob/master/documentation/configuration.md#pactfile_write_mode
 	PactFileWriteMode string
 
 	// Specify which version of the Pact Specification should be used (1 or 2).
@@ -375,6 +375,7 @@ func (p *Pact) VerifyProviderRaw(request types.VerifyRequest) ([]types.ProviderV
 		EnablePending:              request.EnablePending,
 		ProviderTags:               request.ProviderTags,
 		ProviderBranch:             request.ProviderBranch,
+		TagWithGitBranch:           request.TagWithGitBranch,
 		Verbose:                    request.Verbose,
 		FailIfNoPactsFound:         request.FailIfNoPactsFound,
 		IncludeWIPPactsSince:       request.IncludeWIPPactsSince,

@@ -3,7 +3,7 @@ package dsl
 import (
 	"fmt"
 
-	"github.com/pact-foundation/pact-go/types"
+	"github.com/JEFFTheDev/pact-go/types"
 )
 
 // VerifyMessageRequest contains the verification logic

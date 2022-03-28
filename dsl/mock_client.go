@@ -1,7 +1,7 @@
 package dsl
 
 import (
-	"github.com/pact-foundation/pact-go/types"
+	"github.com/JEFFTheDev/pact-go/types"
 )
 
 // Mock Client for testing the DSL package

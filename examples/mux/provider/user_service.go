@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pact-foundation/pact-go/examples/types"
+	"github.com/JEFFTheDev/pact-go/examples/types"
 )
 
 var userRepository = &types.UserRepository{

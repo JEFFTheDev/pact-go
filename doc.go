@@ -93,13 +93,13 @@ This example will result in a response body from the mock server that looks like
   }
 
 See the examples in the dsl package and the matcher tests
-(https://github.com/pact-foundation/pact-go/blob/master/dsl/matcher_test.go)
+(https://github.com/JEFFTheDev/pact-go/blob/master/dsl/matcher_test.go)
 for more matching examples.
 
 NOTE: You will need to use valid Ruby regular expressions
 (http://ruby-doc.org/core-2.1.5/Regexp.html) and double escape backslashes.
 
-Read more about flexible matching (https://github.com/pact-foundation/pact-ruby/wiki/Regular-expressions-and-type-matching-with-Pact.
+Read more about flexible matching (https://github.com/JEFFTheDev/pact-ruby/wiki/Regular-expressions-and-type-matching-with-Pact.
 
 Provider Tests
 

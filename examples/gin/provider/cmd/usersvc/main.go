@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/JEFFTheDev/pact-go/examples/gin/provider"
 	"github.com/gin-gonic/gin"
-	"github.com/pact-foundation/pact-go/examples/gin/provider"
 )
 
 func main() {

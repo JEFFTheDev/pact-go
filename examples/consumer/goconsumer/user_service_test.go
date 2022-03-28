@@ -1,3 +1,4 @@
+//go:build consumer
 // +build consumer
 
 package goconsumer
@@ -15,9 +16,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pact-foundation/pact-go/dsl"
-	ex "github.com/pact-foundation/pact-go/examples/types"
-	"github.com/pact-foundation/pact-go/types"
+	"github.com/JEFFTheDev/pact-go/dsl"
+	ex "github.com/JEFFTheDev/pact-go/examples/types"
+	"github.com/JEFFTheDev/pact-go/types"
 )
 
 // Common test data

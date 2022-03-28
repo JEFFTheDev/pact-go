@@ -1,3 +1,4 @@
+//go:build provider
 // +build provider
 
 package provider
@@ -8,11 +9,11 @@ import (
 	"os"
 	"testing"
 
+	"github.com/JEFFTheDev/pact-go/dsl"
+	examples "github.com/JEFFTheDev/pact-go/examples/types"
+	"github.com/JEFFTheDev/pact-go/types"
+	"github.com/JEFFTheDev/pact-go/utils"
 	"github.com/gin-gonic/gin"
-	"github.com/pact-foundation/pact-go/dsl"
-	examples "github.com/pact-foundation/pact-go/examples/types"
-	"github.com/pact-foundation/pact-go/types"
-	"github.com/pact-foundation/pact-go/utils"
 )
 
 // The actual Provider test itself

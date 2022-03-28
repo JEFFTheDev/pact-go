@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pact-foundation/pact-go/client"
-	"github.com/pact-foundation/pact-go/types"
+	"github.com/JEFFTheDev/pact-go/client"
+	"github.com/JEFFTheDev/pact-go/types"
 )
 
 // Client is the interface
@@ -197,7 +197,7 @@ func (p *PactClient) VerifyProvider(request types.VerifyRequest) ([]types.Provid
 
 	// Split by lines, as the content is JSONL formatted
 	// Each pact is verified by line, and the results (as JSON) sent to stdout.
-	// See https://github.com/pact-foundation/pact-go/issues/88#issuecomment-404686337
+	// See https://github.com/JEFFTheDev/pact-go/issues/88#issuecomment-404686337
 	stdOutScanner := bufio.NewScanner(stdOutPipe)
 	wg.Add(1)
 	go func() {
@@ -232,10 +232,10 @@ func (p *PactClient) VerifyProvider(request types.VerifyRequest) ([]types.Provid
 	for _, v := range verifications {
 		v = strings.TrimSpace(v)
 
-		// TODO: fix once https://github.com/pact-foundation/pact-provider-verifier/issues/26
+		// TODO: fix once https://github.com/JEFFTheDev/pact-provider-verifier/issues/26
 		//       is addressed
 		// logging to stdout breaks the JSON response
-		// https://github.com/pact-foundation/pact-ruby/commit/06fa61581512ba5570c315d089f2c0fc23c8cb11
+		// https://github.com/JEFFTheDev/pact-ruby/commit/06fa61581512ba5570c315d089f2c0fc23c8cb11
 		if v != "" && strings.Index(v, "INFO") != 0 {
 			var verification types.ProviderVerifierResponse
 			dErr := json.Unmarshal([]byte(v), &verification)

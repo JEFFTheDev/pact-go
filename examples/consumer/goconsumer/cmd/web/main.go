@@ -1,6 +1,6 @@
 package main
 
-import "github.com/pact-foundation/pact-go/examples/consumer/goconsumer"
+import "github.com/JEFFTheDev/pact-go/examples/consumer/goconsumer"
 
 func main() {
 	client := goconsumer.Client{

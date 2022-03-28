@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pact-foundation/pact-go/types"
+	"github.com/JEFFTheDev/pact-go/types"
 )
 
 var checkAuth = func(w http.ResponseWriter, r *http.Request) bool {

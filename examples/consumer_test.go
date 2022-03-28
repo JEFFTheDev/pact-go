@@ -1,3 +1,4 @@
+//go:build consumer
 // +build consumer
 
 // Package main contains a runnable Consumer Pact test example.
@@ -10,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pact-foundation/pact-go/dsl"
+	"github.com/JEFFTheDev/pact-go/dsl"
 )
 
 // Example Pact: How to run me!

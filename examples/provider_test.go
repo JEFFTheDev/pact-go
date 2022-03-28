@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/pact-foundation/pact-go/dsl"
-	"github.com/pact-foundation/pact-go/types"
+	"github.com/JEFFTheDev/pact-go/dsl"
+	"github.com/JEFFTheDev/pact-go/types"
 )
 
 var dir, _ = os.Getwd()
