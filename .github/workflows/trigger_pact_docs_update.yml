@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Trigger docs.pact.io update workflow
         run: |
-          curl -X POST https://api.github.com/repos/pact-foundation/docs.pact.io/dispatches \
+          curl -X POST https://api.github.com/repos/JEFFTheDev/docs.pact.io/dispatches \
                 -H 'Accept: application/vnd.github.everest-preview+json' \
                 -H "Authorization: Bearer $GITHUB_TOKEN" \
                 -d '{"event_type": "pact-go-docs-updated"}'

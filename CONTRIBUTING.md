@@ -9,7 +9,7 @@ Please provide the following information with your issue to enable us to respond
 
 1. The relevant versions of the packages you are using.
 1. The steps to recreate your issue.
-1. An executable code example where possible. You can fork this repository and modify the e2e [examples](https://github.com/pact-foundation/pact-go/blob/master/examples) to quickly recreate your issue.
+1. An executable code example where possible. You can fork this repository and modify the e2e [examples](https://github.com/JEFFTheDev/pact-go/blob/master/examples) to quickly recreate your issue.
 
 You can run the E2E tests by:
 
@@ -45,12 +45,12 @@ npm i -g cz-conventional-changelog
 For full integration testing locally, Ruby 2.2.0 must be installed. Under the
 hood, Pact Go bundles the
 [Pact Mock Service](https://github.com/bethesque/pact-mock_service) and
-[Pact Provider Verifier](https://github.com/pact-foundation/pact-provider-verifier)
+[Pact Provider Verifier](https://github.com/JEFFTheDev/pact-provider-verifier)
 projects to implement up to v2.0 of the Pact Specification. This is only
-temporary, until [Pact Reference](https://github.com/pact-foundation/pact-reference/)
+temporary, until [Pact Reference](https://github.com/JEFFTheDev/pact-reference/)
 work is completed.
 
-* Git clone https://github.com/pact-foundation/pact-go.git
+* Git clone https://github.com/JEFFTheDev/pact-go.git
 * Run `make dev` to build the package and setup the Ruby 'binaries' locally
 
 #### Vendoring
